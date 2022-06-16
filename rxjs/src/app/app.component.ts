@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import {of, from, Subscription} from 'rxjs';
+import {of, from, Subscription} from 'rxjs'; 
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent implements OnInit, OnDestroy {
   tempSub: Subscription = new Subscription;
   
   ngOnInit(): void {
-
+    // Creation Functions
     // of() is a  short hand to creatinh an observable with any avluse passed as params.
     this.fruits = of('Apple', 'Banana', 'Orange').subscribe({
       next: values => console.log(values),
